@@ -10,7 +10,7 @@ int main()
 {
     char vehicleSelector;
     int vehicleEnteredInHour, vehicleEnteredInMinutes, vehicleLeftInHour, vehicleLeftInMinutes, finalVehicleLeftInMinutes, finalVehicleLeftInHour, initialVehicleLeftInMinutes, initialVehicleLeftInHour, totalChargePerHourForCar;
-    float totalChargePerHourForBus, totalChargePerHourForTruck;
+    float totalChargePerHourForBus, totalChargePerHourForTruck, initialChargePerHourForBus;
 
     printf("Type of vehicle [B/b for Bus], [C/c for Car], [T/t for Truck]?  ");
     scanf("%c", &vehicleSelector);
@@ -200,7 +200,7 @@ int main()
                                     
                                            
                                             printf("PARKING LOT CHARGE \n \n");
-                                            printf("Type of vehicle: Car \n" );
+                                            printf("Type of vehicle: Bus \n" );
                                             printf("TIME IN           %02d:%02d \n", vehicleEnteredInHour, vehicleEnteredInMinutes);
                                             printf("TIME OUT          %02d:%02d \n", vehicleLeftInHour, vehicleLeftInMinutes);
                                             printf("                --------- \n");
@@ -226,8 +226,8 @@ int main()
                                         }else{
                                         	printf("Invalid input. Take note: military time!");
 										}
-                                            if(finalVehicleLeftInHour > 1){
-                                                totalChargePerHourForBus = finalVehicleLeftInHour - 1;
+                                            if(finalVehicleLeftInHour >= 1){
+                                                initialChargePerHourForBus = finalVehicleLeftInHour - 1;
                                                 totalChargePerHourForBus = (totalChargePerHourForBus * 3.70) + 2;
                                                 printf("TOTAL CHARGE        $%.2f \n", totalChargePerHourForBus);
 
@@ -291,7 +291,7 @@ int main()
                                     
                                            
                                             printf("PARKING LOT CHARGE \n \n");
-                                            printf("Type of vehicle: Car \n" );
+                                            printf("Type of vehicle: Bus \n" );
                                             printf("TIME IN           %02d:%02d \n", vehicleEnteredInHour, vehicleEnteredInMinutes);
                                             printf("TIME OUT          %02d:%02d \n", vehicleLeftInHour, vehicleLeftInMinutes);
                                             printf("                --------- \n");
@@ -301,8 +301,8 @@ int main()
                                         }else{
                                         	printf("Invalid input. Take note: military time!");
 										}
-                                            if(finalVehicleLeftInHour > 1){
-                                                totalChargePerHourForBus = finalVehicleLeftInHour - 1;
+                                            if(finalVehicleLeftInHour >= 1){
+                                                initialChargePerHourForBus = finalVehicleLeftInHour - 1;
                                                 totalChargePerHourForBus = (totalChargePerHourForBus * 3.70) + 2;
                                                 printf("TOTAL CHARGE        $%.2f \n", totalChargePerHourForBus);
 
@@ -350,7 +350,7 @@ int main()
                                     
                                            
                                             printf("PARKING LOT CHARGE \n \n");
-                                            printf("Type of vehicle: Car \n" );
+                                            printf("Type of vehicle: Truck \n" );
                                             printf("TIME IN           %02d:%02d \n", vehicleEnteredInHour, vehicleEnteredInMinutes);
                                             printf("TIME OUT          %02d:%02d \n", vehicleLeftInHour, vehicleLeftInMinutes);
                                             printf("                --------- \n");
@@ -366,7 +366,7 @@ int main()
                                     
                                            
                                             printf("PARKING LOT CHARGE \n \n");
-                                            printf("Type of vehicle: Car \n" );
+                                            printf("Type of vehicle: Truck \n" );
                                             printf("TIME IN           %02d:%02d \n", vehicleEnteredInHour, vehicleEnteredInMinutes);
                                             printf("TIME OUT          %02d:%02d \n", vehicleLeftInHour, vehicleLeftInMinutes);
                                             printf("                --------- \n");
@@ -425,7 +425,7 @@ int main()
                                     
                                            
                                             printf("PARKING LOT CHARGE \n \n");
-                                            printf("Type of vehicle: Car \n" );
+                                            printf("Type of vehicle: Truck \n" );
                                             printf("TIME IN           %02d:%02d \n", vehicleEnteredInHour, vehicleEnteredInMinutes);
                                             printf("TIME OUT          %02d:%02d \n", vehicleLeftInHour, vehicleLeftInMinutes);
                                             printf("                --------- \n");
@@ -441,7 +441,7 @@ int main()
                                     
                                            
                                             printf("PARKING LOT CHARGE \n \n");
-                                            printf("Type of vehicle: Car \n" );
+                                            printf("Type of vehicle: Truck \n" );
                                             printf("TIME IN           %02d:%02d \n", vehicleEnteredInHour, vehicleEnteredInMinutes);
                                             printf("TIME OUT          %02d:%02d \n", vehicleLeftInHour, vehicleLeftInMinutes);
                                             printf("                --------- \n");
